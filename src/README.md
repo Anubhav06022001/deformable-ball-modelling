@@ -17,7 +17,7 @@ Run every script from the **repository root** (`python src/<script>.py ...`), in
 ```bash
 python src/track.py train
 python src/fit.py
-python src/proxy.py                      # optional GUI check
+python src/proxy.py                      
 python src/track.py test
 python src/validate.py
 python src/make_demo.py --name test
