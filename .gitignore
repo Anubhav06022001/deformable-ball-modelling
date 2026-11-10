@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+papers/*.pdf
+Dirac-Research-TakeHome.pdf
