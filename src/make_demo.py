@@ -1,15 +1,4 @@
-"""Step 6 - Demo video: real ball (left) | PyBullet box proxy (right) | curves (bottom).
 
-Usage:
-    python src/make_demo.py               # on the fresh 'test' press
-    python src/make_demo.py --name train  # on the training press
-    python src/make_demo.py --gain 3      # exaggerate the proxy's deformation 3x (display only)
-
-Before release the proxy follows the tracked deformation (hand in contact, force unknown).
-From the release frame on, the proxy is driven ONLY by the fitted spring-damper model.
-
-Output: results/demo_<name>.mp4
-"""
 import argparse
 import json
 

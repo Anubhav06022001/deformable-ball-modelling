@@ -1,14 +1,4 @@
-"""Step 4 - 3D geometric proxy of the ball in PyBullet: a box mesh with 8 corners.
 
-The box is deformed by the 1-DOF state x from dynamics.py, volume-preservingly:
-    sz = (1 - x)^(2/3)          vertical scale
-    sx = sy = 1 / sqrt(sz)      lateral bulge, so sx*sy*sz = 1  (constant volume)
-Then height/width = sz/sx = (1 - x)  -> exactly the aspect-ratio change we track in video.
-
-Usage:
-    python src/proxy.py            # opens the PyBullet GUI and plays the fitted recovery
-    python src/proxy.py --direct   # headless; saves results/proxy_preview.png
-"""
 import argparse
 import json
 import time

@@ -1,18 +1,4 @@
-"""Step 2 - Spring-mass-damper model of the ball's shape, integrated with explicit Euler.
 
-State x = deformation (strain) of the ball relative to its rest shape:
-    x = (aspect_rest - aspect) / aspect_rest       x > 0 : squashed, x = 0 : rest
-
-Equation of motion (eq. 15.5 style, one degree of freedom):
-    m x'' = F_ext - k x - c x'
-Euler step (sub-stepped for stability):
-    a = (F_ext - k*x - c*v) / m
-    v += a * dt
-    x += v * dt
-
-Can be run on its own as a quick demo:
-    python src/dynamics.py
-"""
 import numpy as np
 import pandas as pd
 
